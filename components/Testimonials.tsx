@@ -11,20 +11,20 @@ const StarIcon: React.FC<{ className?: string }> = ({ className }) => (
 
 
 const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({ testimonial }) => (
-    <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 transform hover:-translate-y-2 transition-transform duration-300">
-        <div className="flex text-gold-accent mb-4">
+    <div className="bg-white p-6 rounded-xl shadow-md border border-border-color transform hover:-translate-y-2 transition-transform duration-300">
+        <div className="flex text-secondary mb-4">
             <StarIcon />
             <StarIcon />
             <StarIcon />
             <StarIcon />
             <StarIcon />
         </div>
-        <p className="text-gray-600 mb-6">"{testimonial.quote}"</p>
+        <p className="text-light-text mb-6 italic">"{testimonial.quote}"</p>
         <div className="flex items-center">
             <img src={testimonial.image} alt={testimonial.name} className="w-12 h-12 rounded-full mr-4 object-cover"/>
             <div>
-                <p className="font-bold text-deep-gray">{testimonial.name}</p>
-                <p className="text-sm text-gray-500">{testimonial.title}</p>
+                <p className="font-bold text-dark-text">{testimonial.name}</p>
+                <p className="text-sm text-light-text">{testimonial.title}</p>
             </div>
         </div>
     </div>
@@ -32,11 +32,11 @@ const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({ testimonial }
 
 const Testimonials: React.FC = () => {
     return (
-        <section className="py-16 md:py-24 bg-white">
+        <section className="py-16 md:py-24 bg-light-bg">
             <div className="container mx-auto px-6">
                 <div className="max-w-3xl mx-auto text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold text-deep-gray mb-4">Don't Just Take Our Word For It</h2>
-                    <p className="text-lg text-gray-600">See what our successful students have to say about their transformation.</p>
+                    <h2 className="text-3xl md:text-4xl font-bold text-dark-text mb-4">Don't Just Take Our Word For It</h2>
+                    <p className="text-lg text-light-text">See what our successful students have to say about their transformation.</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {TESTIMONIALS.map((testimonial, index) => (

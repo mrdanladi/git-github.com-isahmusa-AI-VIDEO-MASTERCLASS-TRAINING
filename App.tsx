@@ -18,7 +18,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="bg-white text-deep-gray overflow-x-hidden">
+    <div className="bg-light-bg text-dark-text overflow-x-hidden">
       <Header onEnrollClick={scrollToEnrollment} />
       <main>
         <Hero onEnrollClick={scrollToEnrollment} />

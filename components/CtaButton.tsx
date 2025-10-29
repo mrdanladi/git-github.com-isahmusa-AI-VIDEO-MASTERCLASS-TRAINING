@@ -14,10 +14,10 @@ const CtaButton: React.FC<CtaButtonProps> = ({ children, className, size = 'md',
       className={`
         ${sizeClasses}
         font-bold text-white rounded-full 
-        bg-gradient-to-r from-electric-blue to-gold-accent
-        hover:scale-105 hover:shadow-xl hover:shadow-electric-blue/30
+        bg-gradient-to-r from-primary to-primary-dark
+        hover:scale-105 hover:shadow-xl hover:shadow-primary/30
         transition-all duration-300 transform
-        focus:outline-none focus:ring-4 focus:ring-blue-300
+        focus:outline-none focus:ring-4 focus:ring-primary/50
         disabled:opacity-50 disabled:cursor-not-allowed
         ${className}
       `}
